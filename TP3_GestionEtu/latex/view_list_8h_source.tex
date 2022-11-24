@@ -1,0 +1,29 @@
+\hypertarget{view_list_8h_source}{}\doxysection{view\+List.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}controller.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_list}{ViewList}} : \textcolor{keyword}{public} QObject, \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{17     QListWidget* list;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_controller___delete_list}{Controller\_DeleteList}}* controller;}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_view_list_a29d1714bdaf5af410e07e693360b94fe}{ViewList}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_view_list_a29d1714bdaf5af410e07e693360b94fe}{ViewList}}(QListWidget* list, \mbox{\hyperlink{class_promotion}{Promotion}}* p);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_list_ac4a539ad2a417cb63f9cec2e5abae06a}{remove}}();}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\hypertarget{_t_p3___gestion_etu_8h_source}{}\doxysection{TP3\+\_\+\+Gestion\+Etu.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ui\_TP3\_GestionEtu.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}viewList.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}viewForms.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}viewPieChart.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}viewHistogram.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Promotion.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_t_p3___gestion_etu}{TP3\_GestionEtu}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     Q\_OBJECT}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_t_p3___gestion_etu_ab3bb97269dbbfc2a2ca8c38541404fb2}{TP3\_GestionEtu}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_t_p3___gestion_etu}{\string~TP3\_GestionEtu}}() \{\}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_t_p3___gestion_etu_a4a30a88a16e34b42c22944ed7c09fdd9}{setData}}(\mbox{\hyperlink{class_promotion}{Promotion}}* p);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     Ui::TP3\_GestionEtuClass ui;}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_view_list}{ViewList}}* listView;}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_view_forms}{ViewForms}}* listForm;}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_view_pie_chart}{ViewPieChart}}* pieChartView;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_view_histogram}{ViewHistogram}}* histogramView;}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{32     }
+\DoxyCodeLine{33 \};}
+
+\end{DoxyCode}

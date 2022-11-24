@@ -1,0 +1,33 @@
+\hypertarget{view_histogram_8h_source}{}\doxysection{view\+Histogram.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QtCharts/QBarSet>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QtCharts/QChart>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QtCharts/QChartView>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QtCharts/QBarSeries>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QtCharts/QBarCategoryAxis>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QtCharts/QValueAxis>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_histogram}{ViewHistogram}} : \textcolor{keyword}{public} QObject, \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     Q\_OBJECT}
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23     QGroupBox* chart;}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{25     QChartView* chartview;}
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_view_histogram_ac52b2bba24a57199dc6e213931bc1234}{ViewHistogram}}();}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_view_histogram_ac52b2bba24a57199dc6e213931bc1234}{ViewHistogram}}(QGroupBox* chart, \mbox{\hyperlink{class_promotion}{Promotion}}* p);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_histogram_a9d8a8c46008ff6ea819deff0c5f29e33}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+
+\end{DoxyCode}

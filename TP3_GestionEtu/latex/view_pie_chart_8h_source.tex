@@ -1,0 +1,31 @@
+\hypertarget{view_pie_chart_8h_source}{}\doxysection{view\+Pie\+Chart.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}promotion.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGroupBox>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QtCharts/QPieSeries>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QtCharts/QPieSlice>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QtCharts/QChart>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QtCharts/QChartView>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_view_pie_chart}{ViewPieChart}} : \textcolor{keyword}{public} QObject, \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     Q\_OBJECT}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     QGroupBox* chart;}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_promotion}{Promotion}}* promo;}
+\DoxyCodeLine{22     QChartView* chartview;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_view_pie_chart_a914c73f0c40865bd001193cc0a5ecbe5}{ViewPieChart}}();}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_view_pie_chart_a914c73f0c40865bd001193cc0a5ecbe5}{ViewPieChart}}(QGroupBox* chart, \mbox{\hyperlink{class_promotion}{Promotion}}* p);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_pie_chart_a164b314e0401cc0bd511afc35e5a43b7}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+
+\end{DoxyCode}

@@ -1,0 +1,157 @@
+\hypertarget{class_view_forms}{}\doxysection{View\+Forms Class Reference}
+\label{class_view_forms}\index{ViewForms@{ViewForms}}
+
+
+Cette classe \mbox{\hyperlink{class_view_forms}{View\+Forms}} permet d\textquotesingle{}avoir l\textquotesingle{}ensemble des donnees sur les formulaires et les fonctions a executer.  
+
+
+
+
+{\ttfamily \#include $<$view\+Forms.\+h$>$}
+
+Inheritance diagram for View\+Forms\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view_forms}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_view_forms_af4205615e87d0ca0b47de664d21081f7}{add}} ()
+\begin{DoxyCompactList}\small\item\em add permet de creer un nouveau \mbox{\hyperlink{class_student}{Student}} uniquement si les veleurs entrees passent correctement le contrôle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_view_forms_a065284f386525899fdd377dab18eedf8}{remove}} ()
+\begin{DoxyCompactList}\small\item\em remove permet de suprimer un \mbox{\hyperlink{class_student}{Student}} uniquement si le numero entree existe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a088908667c8609884f9c5ff48887c166}{modify}} (QList\+Widget\+Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em Fonction Modify. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_ad81ad713e2d2ac5ad8b28d9f9e7ddbf7}{reset\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Fonction reset\+Button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a30fe65f8acddfa10d9f74390bcba5748}{modify\+Student}} ()
+\begin{DoxyCompactList}\small\item\em Fonction modify\+Student. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_view_forms_a620c056a106d08dbfe4833abd866f609}\label{class_view_forms_a620c056a106d08dbfe4833abd866f609}} 
+{\bfseries View\+Forms} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_view_forms}{View\+Forms}} est le constructeur par defaut de \mbox{\hyperlink{class_view_forms}{View\+Forms}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_view_forms_a851b1d76bd200f4d2d300f62f5a7c7c0}{View\+Forms}} (QLine\+Edit $\ast$add\+Num, QLine\+Edit $\ast$add\+Prenom, QLine\+Edit $\ast$add\+Nom, QCombo\+Box $\ast$add\+Bac, QCombo\+Box $\ast$add\+Dept, QLine\+Edit $\ast$del\+Num, QPush\+Button $\ast$ajout, QPush\+Button $\ast$modifier, QPush\+Button $\ast$reset, \mbox{\hyperlink{class_promotion}{Promotion}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_view_forms}{View\+Forms}} est un constructeur qui permet de creer les diffrents push\+Buttons, line\+Edits et label de la Box\+\_\+add\+Student. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a06b6ab988036097375f7b50c26b4a302}{update}} () override
+\begin{DoxyCompactList}\small\item\em Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe \mbox{\hyperlink{class_view_forms}{View\+Forms}} permet d\textquotesingle{}avoir l\textquotesingle{}ensemble des donnees sur les formulaires et les fonctions a executer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_view_forms_a851b1d76bd200f4d2d300f62f5a7c7c0}\label{class_view_forms_a851b1d76bd200f4d2d300f62f5a7c7c0}} 
+\index{ViewForms@{ViewForms}!ViewForms@{ViewForms}}
+\index{ViewForms@{ViewForms}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{ViewForms()}{ViewForms()}}
+{\footnotesize\ttfamily View\+Forms\+::\+View\+Forms (\begin{DoxyParamCaption}\item[{QLine\+Edit $\ast$}]{add\+Num,  }\item[{QLine\+Edit $\ast$}]{add\+Prenom,  }\item[{QLine\+Edit $\ast$}]{add\+Nom,  }\item[{QCombo\+Box $\ast$}]{add\+Bac,  }\item[{QCombo\+Box $\ast$}]{add\+Dept,  }\item[{QLine\+Edit $\ast$}]{del\+Num,  }\item[{QPush\+Button $\ast$}]{ajout,  }\item[{QPush\+Button $\ast$}]{modifier,  }\item[{QPush\+Button $\ast$}]{reset,  }\item[{\mbox{\hyperlink{class_promotion}{Promotion}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_view_forms}{View\+Forms}} est un constructeur qui permet de creer les diffrents push\+Buttons, line\+Edits et label de la Box\+\_\+add\+Student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em add\+Num} & \+: QLine\+Edit$\ast$ =\texorpdfstring{$>$}{>} Un input \\
+\hline
+{\em add\+Prenom} & \+: QLine\+Edit$\ast$ =\texorpdfstring{$>$}{>} Un input \\
+\hline
+{\em add\+Nom} & \+: QLine\+Edit$\ast$ =\texorpdfstring{$>$}{>} Un input \\
+\hline
+{\em add\+Bac} & \+: QCombo\+Box$\ast$ =\texorpdfstring{$>$}{>} Une box \\
+\hline
+{\em add\+Dept} & \+: QCombo\+Box$\ast$ =\texorpdfstring{$>$}{>} Une box \\
+\hline
+{\em del\+Num} & \+: QLine\+Edit$\ast$ =\texorpdfstring{$>$}{>} Un input \\
+\hline
+{\em p} & \+: Promotion$\ast$ =\texorpdfstring{$>$}{>} Une promotion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_forms_af4205615e87d0ca0b47de664d21081f7}\label{class_view_forms_af4205615e87d0ca0b47de664d21081f7}} 
+\index{ViewForms@{ViewForms}!add@{add}}
+\index{add@{add}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{add}{add}}
+{\footnotesize\ttfamily bool View\+Forms\+::add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+add permet de creer un nouveau \mbox{\hyperlink{class_student}{Student}} uniquement si les veleurs entrees passent correctement le contrôle 
+
+\begin{DoxyReturn}{Returns}
+Boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_forms_a088908667c8609884f9c5ff48887c166}\label{class_view_forms_a088908667c8609884f9c5ff48887c166}} 
+\index{ViewForms@{ViewForms}!modify@{modify}}
+\index{modify@{modify}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{modify}{modify}}
+{\footnotesize\ttfamily void View\+Forms\+::modify (\begin{DoxyParamCaption}\item[{QList\+Widget\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction Modify. 
+
+Cette fonction permet de modifier les donnees apres un evenement de double click sur la \mbox{\hyperlink{class_view_list}{View\+List}} 
+\begin{DoxyParams}{Parameters}
+{\em item} & \+: QList\+Widget\+Item$\ast$ =\texorpdfstring{$>$}{>} L\textquotesingle{}item a return \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_view_forms_a30fe65f8acddfa10d9f74390bcba5748}\label{class_view_forms_a30fe65f8acddfa10d9f74390bcba5748}} 
+\index{ViewForms@{ViewForms}!modifyStudent@{modifyStudent}}
+\index{modifyStudent@{modifyStudent}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{modifyStudent}{modifyStudent}}
+{\footnotesize\ttfamily void View\+Forms\+::modify\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction modify\+Student. 
+
+Permet la modification direct d\textquotesingle{}un etudiant et envoies les informations au controller. \mbox{\Hypertarget{class_view_forms_a065284f386525899fdd377dab18eedf8}\label{class_view_forms_a065284f386525899fdd377dab18eedf8}} 
+\index{ViewForms@{ViewForms}!remove@{remove}}
+\index{remove@{remove}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{remove}{remove}}
+{\footnotesize\ttfamily bool View\+Forms\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+remove permet de suprimer un \mbox{\hyperlink{class_student}{Student}} uniquement si le numero entree existe 
+
+\begin{DoxyReturn}{Returns}
+Boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_forms_ad81ad713e2d2ac5ad8b28d9f9e7ddbf7}\label{class_view_forms_ad81ad713e2d2ac5ad8b28d9f9e7ddbf7}} 
+\index{ViewForms@{ViewForms}!resetButton@{resetButton}}
+\index{resetButton@{resetButton}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{resetButton}{resetButton}}
+{\footnotesize\ttfamily void View\+Forms\+::reset\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction reset\+Button. 
+
+Permet de lancer une update et de remettre a vide et le form \mbox{\Hypertarget{class_view_forms_a06b6ab988036097375f7b50c26b4a302}\label{class_view_forms_a06b6ab988036097375f7b50c26b4a302}} 
+\index{ViewForms@{ViewForms}!update@{update}}
+\index{update@{update}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void View\+Forms\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Fonction update. 
+
+Cette fonction permet de mettre a jour les donnees presentes dans les forms de l\textquotesingle{}application 
+
+Implements \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+view\+Forms.\+h\item 
+view\+Forms.\+cpp\end{DoxyCompactItemize}

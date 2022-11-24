@@ -1,0 +1,46 @@
+\hypertarget{promotion_8h_source}{}\doxysection{promotion.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QStringList>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}student.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_promotion}{Promotion}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_observable}{Observable}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     QVector<Student> studentList;}
+\DoxyCodeLine{18     QString selectedStudent;}
+\DoxyCodeLine{19     QVector<Observer*> views;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_student}{Student}} currentModify;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \mbox{\hyperlink{class_promotion_aa10833a0510fd7fdf3a8b7019ae61531}{Promotion}}();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_promotion_a106ded8c83b2896cba3e60b41c30b56f}{loadFileCSV}}(QString fichier);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a14840dae4a98f04406e51a94fd720938}{print}}();}
+\DoxyCodeLine{26     QStringList \mbox{\hyperlink{class_promotion_a58389021be73a19bdbf43dc6da14fc7a}{getList}}();}
+\DoxyCodeLine{27     QString \mbox{\hyperlink{class_promotion_a2f12fdc3ed844e59fdd30af552a732fb}{getSelectedStudent}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_abad3e1392b755e47f44aeebab38635e2}{setSelected}}(QString);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_a06159d67bfbcc63b44c905ede47f37e6}{add}}(\mbox{\hyperlink{class_student}{Student}} s);}
+\DoxyCodeLine{31     QString \mbox{\hyperlink{class_promotion_ad6ec09c56cb6da6b7d3b86e41e86d493}{remove}}(QString s);}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_ad6ec09c56cb6da6b7d3b86e41e86d493}{remove}}(\mbox{\hyperlink{class_student}{Student}} s);}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_a2ff6c20b37ac1e6c74d105dcf63dc047}{removeSecret}}(\mbox{\hyperlink{class_student}{Student}} s);}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_a6405664fe31a0d47c3de263c478c9d8c}{find}}(QString \textcolor{keywordtype}{id});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_af8a7c0894c0b0840e1c1ac6b8b19ff6c}{addObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* view) \textcolor{keyword}{override};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a449212234f88ebfa6ca18d4944bc7192}{removeObserver}}(\mbox{\hyperlink{class_observer}{Observer}}* view) \textcolor{keyword}{override};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a23ad7242585f7b14a5ac34e8ceda9394}{notifyObserver}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45     QVector<Student> \mbox{\hyperlink{class_promotion_a7c98bf8fa21efb8c2226e298294e8864}{getVector}}() \{ \textcolor{keywordflow}{return} this-\/>studentList; \}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52     \mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_af9e5ad9f64147248cc2641c80f114093}{getCurrentModify}}() \{ \textcolor{keywordflow}{return} this-\/>currentModify; \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_promotion_a00e733fcd3be71d8ce3f57339dfd0ead}{setCurrentModify}}(\mbox{\hyperlink{class_student}{Student}} s) \{ this-\/>currentModify = s; \}}
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+
+\end{DoxyCode}

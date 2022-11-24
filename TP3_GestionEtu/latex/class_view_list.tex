@@ -1,0 +1,88 @@
+\hypertarget{class_view_list}{}\doxysection{View\+List Class Reference}
+\label{class_view_list}\index{ViewList@{ViewList}}
+
+
+Cette classe permet de gerer la liste d\textquotesingle{}etudiant sur la partie droite de l\textquotesingle{}application.  
+
+
+
+
+{\ttfamily \#include $<$view\+List.\+h$>$}
+
+Inheritance diagram for View\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_view_list_ac4a539ad2a417cb63f9cec2e5abae06a}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Fonction remove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_view_list_a29d1714bdaf5af410e07e693360b94fe}\label{class_view_list_a29d1714bdaf5af410e07e693360b94fe}} 
+{\bfseries View\+List} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_view_list}{View\+List}} est le constructeur par defaut de \mbox{\hyperlink{class_view_list}{View\+List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_view_list_a9dee80943c77c557b88050cf5ce426e9}{View\+List}} (QList\+Widget $\ast$list, \mbox{\hyperlink{class_promotion}{Promotion}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_view_list}{View\+List}} est un constructeur de \mbox{\hyperlink{class_view_list}{View\+List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}{update}} () override
+\begin{DoxyCompactList}\small\item\em Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe permet de gerer la liste d\textquotesingle{}etudiant sur la partie droite de l\textquotesingle{}application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_view_list_a9dee80943c77c557b88050cf5ce426e9}\label{class_view_list_a9dee80943c77c557b88050cf5ce426e9}} 
+\index{ViewList@{ViewList}!ViewList@{ViewList}}
+\index{ViewList@{ViewList}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{ViewList()}{ViewList()}}
+{\footnotesize\ttfamily View\+List\+::\+View\+List (\begin{DoxyParamCaption}\item[{QList\+Widget $\ast$}]{list,  }\item[{\mbox{\hyperlink{class_promotion}{Promotion}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_view_list}{View\+List}} est un constructeur de \mbox{\hyperlink{class_view_list}{View\+List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \+: QList\+Widget$\ast$ =\texorpdfstring{$>$}{>} La liste \\
+\hline
+{\em p} & \+: Promotion$\ast$ =\texorpdfstring{$>$}{>} La promotion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_list_ac4a539ad2a417cb63f9cec2e5abae06a}\label{class_view_list_ac4a539ad2a417cb63f9cec2e5abae06a}} 
+\index{ViewList@{ViewList}!remove@{remove}}
+\index{remove@{remove}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{remove}{remove}}
+{\footnotesize\ttfamily void View\+List\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Fonction remove. 
+
+Cette fonction permet de supprimer l\textquotesingle{}etudiant selectionné dans la \mbox{\hyperlink{class_view_list}{View\+List}} \mbox{\Hypertarget{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}\label{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}} 
+\index{ViewList@{ViewList}!update@{update}}
+\index{update@{update}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void View\+List\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Fonction update. 
+
+Cette fonction permet la mise a jour de la \mbox{\hyperlink{class_view_list}{View\+List}} de l\textquotesingle{}application selon si c\textquotesingle{}est un double click ou une action de modification 
+
+Implements \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+view\+List.\+h\item 
+view\+List.\+cpp\end{DoxyCompactItemize}

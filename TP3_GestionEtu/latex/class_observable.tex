@@ -1,0 +1,94 @@
+\hypertarget{class_observable}{}\doxysection{Observable Class Reference}
+\label{class_observable}\index{Observable@{Observable}}
+
+
+Classe \mbox{\hyperlink{class_observable}{Observable}}.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+Inheritance diagram for Observable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_observable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_observable_a42f551d4d64ffa48a2ea8d7f0a4e42d4}\label{class_observable_a42f551d4d64ffa48a2ea8d7f0a4e42d4}} 
+virtual {\bfseries $\sim$\+Observable} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par default de la classe. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_observable_a959b41e1637ebeeb32b7118b15770867}{add\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em Fonction add\+Observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_observable_a620631b40a72b72dd13f430d3884b732}{remove\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em Fonction remove\+Observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_observable_a5fef050c996f33e70e44d29dd4352ba0}{notify\+Observer}} ()=0
+\begin{DoxyCompactList}\small\item\em Fonction notify\+Observer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_observable}{Observable}}. 
+
+Cette classe est utilise pour mettre a jour les donnees de l\textquotesingle{}application Elle est sous le Design Patern \mbox{\hyperlink{class_observer}{Observer}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_observable_a959b41e1637ebeeb32b7118b15770867}\label{class_observable_a959b41e1637ebeeb32b7118b15770867}} 
+\index{Observable@{Observable}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily virtual void Observable\+::add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Fonction add\+Observer. 
+
+Cette fonction permet d\textquotesingle{}ajouter un \mbox{\hyperlink{class_observer}{Observer}} a la series de donnees. Cela permet a la serie de donnees d\textquotesingle{}envoyer ses nouvelles informations aux observers. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_promotion_af8a7c0894c0b0840e1c1ac6b8b19ff6c}{Promotion}}.
+
+\mbox{\Hypertarget{class_observable_a5fef050c996f33e70e44d29dd4352ba0}\label{class_observable_a5fef050c996f33e70e44d29dd4352ba0}} 
+\index{Observable@{Observable}!notifyObserver@{notifyObserver}}
+\index{notifyObserver@{notifyObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{notifyObserver()}{notifyObserver()}}
+{\footnotesize\ttfamily virtual void Observable\+::notify\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Fonction notify\+Observer. 
+
+Cette fonction permet de mettre a jour l\textquotesingle{}ensemble des observer ajoute a la donnees. Elle met donc a jour les vues. 
+
+Implemented in \mbox{\hyperlink{class_promotion_a23ad7242585f7b14a5ac34e8ceda9394}{Promotion}}.
+
+\mbox{\Hypertarget{class_observable_a620631b40a72b72dd13f430d3884b732}\label{class_observable_a620631b40a72b72dd13f430d3884b732}} 
+\index{Observable@{Observable}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily virtual void Observable\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Fonction remove\+Observer. 
+
+Cette fonction permet de retirer un \mbox{\hyperlink{class_observer}{Observer}} a la series de donnees. Cela permet a la serie de donnees de ne plus envoyer ses nouvelles informations aux observers. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_promotion_a449212234f88ebfa6ca18d4944bc7192}{Promotion}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+observer.\+h\end{DoxyCompactItemize}
